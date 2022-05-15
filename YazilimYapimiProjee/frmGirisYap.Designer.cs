@@ -37,7 +37,11 @@
             this.radioButtonOgrenciGiris = new System.Windows.Forms.RadioButton();
             this.radioButtonOgretmenGiris = new System.Windows.Forms.RadioButton();
             this.radioButtonAdminGiris = new System.Windows.Forms.RadioButton();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lnksifreunut = new System.Windows.Forms.LinkLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblKullaniciAdi
@@ -46,8 +50,8 @@
             this.lblKullaniciAdi.BackColor = System.Drawing.Color.Transparent;
             this.lblKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblKullaniciAdi.ForeColor = System.Drawing.Color.Crimson;
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(498, 208);
+            this.lblKullaniciAdi.ForeColor = System.Drawing.Color.White;
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(6, 45);
             this.lblKullaniciAdi.Name = "lblKullaniciAdi";
             this.lblKullaniciAdi.Size = new System.Drawing.Size(143, 22);
             this.lblKullaniciAdi.TabIndex = 0;
@@ -59,8 +63,8 @@
             this.lblSifre.BackColor = System.Drawing.Color.Transparent;
             this.lblSifre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblSifre.ForeColor = System.Drawing.Color.Crimson;
-            this.lblSifre.Location = new System.Drawing.Point(577, 252);
+            this.lblSifre.ForeColor = System.Drawing.Color.White;
+            this.lblSifre.Location = new System.Drawing.Point(85, 80);
             this.lblSifre.Name = "lblSifre";
             this.lblSifre.Size = new System.Drawing.Size(64, 22);
             this.lblSifre.TabIndex = 1;
@@ -72,10 +76,11 @@
             this.txtKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.txtKullaniciAdi.ForeColor = System.Drawing.Color.Snow;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(698, 206);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(161, 43);
+            this.txtKullaniciAdi.Multiline = true;
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(211, 21);
-            this.txtKullaniciAdi.TabIndex = 2;
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(211, 27);
+            this.txtKullaniciAdi.TabIndex = 1;
             // 
             // txtSifre
             // 
@@ -83,17 +88,18 @@
             this.txtSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.txtSifre.ForeColor = System.Drawing.Color.Snow;
-            this.txtSifre.Location = new System.Drawing.Point(698, 253);
+            this.txtSifre.Location = new System.Drawing.Point(161, 75);
+            this.txtSifre.Multiline = true;
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '*';
-            this.txtSifre.Size = new System.Drawing.Size(211, 21);
-            this.txtSifre.TabIndex = 3;
+            this.txtSifre.Size = new System.Drawing.Size(211, 27);
+            this.txtSifre.TabIndex = 2;
             // 
             // btnGirisYap
             // 
             this.btnGirisYap.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnGirisYap.Location = new System.Drawing.Point(927, 400);
+            this.btnGirisYap.Location = new System.Drawing.Point(125, 122);
             this.btnGirisYap.Name = "btnGirisYap";
             this.btnGirisYap.Size = new System.Drawing.Size(190, 35);
             this.btnGirisYap.TabIndex = 5;
@@ -106,8 +112,8 @@
             this.linkLabelKayitOl.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
             this.linkLabelKayitOl.AutoSize = true;
             this.linkLabelKayitOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.linkLabelKayitOl.LinkColor = System.Drawing.Color.RoyalBlue;
-            this.linkLabelKayitOl.Location = new System.Drawing.Point(738, 448);
+            this.linkLabelKayitOl.LinkColor = System.Drawing.Color.AliceBlue;
+            this.linkLabelKayitOl.Location = new System.Drawing.Point(58, 166);
             this.linkLabelKayitOl.Name = "linkLabelKayitOl";
             this.linkLabelKayitOl.Size = new System.Drawing.Size(91, 20);
             this.linkLabelKayitOl.TabIndex = 6;
@@ -118,10 +124,10 @@
             // radioButtonOgrenciGiris
             // 
             this.radioButtonOgrenciGiris.AutoSize = true;
-            this.radioButtonOgrenciGiris.BackColor = System.Drawing.Color.Silver;
+            this.radioButtonOgrenciGiris.BackColor = System.Drawing.Color.IndianRed;
             this.radioButtonOgrenciGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.radioButtonOgrenciGiris.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.radioButtonOgrenciGiris.Location = new System.Drawing.Point(474, 313);
+            this.radioButtonOgrenciGiris.ForeColor = System.Drawing.Color.Azure;
+            this.radioButtonOgrenciGiris.Location = new System.Drawing.Point(6, 33);
             this.radioButtonOgrenciGiris.Name = "radioButtonOgrenciGiris";
             this.radioButtonOgrenciGiris.Size = new System.Drawing.Size(114, 24);
             this.radioButtonOgrenciGiris.TabIndex = 7;
@@ -132,10 +138,10 @@
             // radioButtonOgretmenGiris
             // 
             this.radioButtonOgretmenGiris.AutoSize = true;
-            this.radioButtonOgretmenGiris.BackColor = System.Drawing.Color.Silver;
+            this.radioButtonOgretmenGiris.BackColor = System.Drawing.Color.IndianRed;
             this.radioButtonOgretmenGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.radioButtonOgretmenGiris.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.radioButtonOgretmenGiris.Location = new System.Drawing.Point(698, 313);
+            this.radioButtonOgretmenGiris.ForeColor = System.Drawing.Color.White;
+            this.radioButtonOgretmenGiris.Location = new System.Drawing.Point(159, 33);
             this.radioButtonOgretmenGiris.Name = "radioButtonOgretmenGiris";
             this.radioButtonOgretmenGiris.Size = new System.Drawing.Size(206, 24);
             this.radioButtonOgretmenGiris.TabIndex = 8;
@@ -146,10 +152,10 @@
             // radioButtonAdminGiris
             // 
             this.radioButtonAdminGiris.AutoSize = true;
-            this.radioButtonAdminGiris.BackColor = System.Drawing.Color.Silver;
+            this.radioButtonAdminGiris.BackColor = System.Drawing.Color.IndianRed;
             this.radioButtonAdminGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.radioButtonAdminGiris.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.radioButtonAdminGiris.Location = new System.Drawing.Point(1028, 313);
+            this.radioButtonAdminGiris.ForeColor = System.Drawing.Color.White;
+            this.radioButtonAdminGiris.Location = new System.Drawing.Point(402, 33);
             this.radioButtonAdminGiris.Name = "radioButtonAdminGiris";
             this.radioButtonAdminGiris.Size = new System.Drawing.Size(89, 24);
             this.radioButtonAdminGiris.TabIndex = 9;
@@ -157,40 +163,68 @@
             this.radioButtonAdminGiris.Text = "ADMİN";
             this.radioButtonAdminGiris.UseVisualStyleBackColor = false;
             // 
-            // linkLabel1
+            // lnksifreunut
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.linkLabel1.LinkColor = System.Drawing.Color.SeaGreen;
-            this.linkLabel1.Location = new System.Drawing.Point(486, 407);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(177, 20);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "ŞİFREMİ UNUTTUM";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.lnksifreunut.AutoSize = true;
+            this.lnksifreunut.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lnksifreunut.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lnksifreunut.ForeColor = System.Drawing.Color.Chocolate;
+            this.lnksifreunut.LinkColor = System.Drawing.Color.White;
+            this.lnksifreunut.Location = new System.Drawing.Point(259, 170);
+            this.lnksifreunut.Name = "lnksifreunut";
+            this.lnksifreunut.Size = new System.Drawing.Size(147, 16);
+            this.lnksifreunut.TabIndex = 10;
+            this.lnksifreunut.TabStop = true;
+            this.lnksifreunut.Text = "ŞİFREMİ UNUTTUM";
+            this.lnksifreunut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // Form1
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtKullaniciAdi);
+            this.groupBox1.Controls.Add(this.txtSifre);
+            this.groupBox1.Controls.Add(this.lnksifreunut);
+            this.groupBox1.Controls.Add(this.lblKullaniciAdi);
+            this.groupBox1.Controls.Add(this.lblSifre);
+            this.groupBox1.Controls.Add(this.btnGirisYap);
+            this.groupBox1.Controls.Add(this.linkLabelKayitOl);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(401, 195);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(452, 255);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sistem Giriş";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButtonOgrenciGiris);
+            this.groupBox2.Controls.Add(this.radioButtonOgretmenGiris);
+            this.groupBox2.Controls.Add(this.radioButtonAdminGiris);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox2.Location = new System.Drawing.Point(381, 76);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(509, 90);
+            this.groupBox2.TabIndex = 12;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Giriş Türünü Seçiniz";
+            // 
+            // frmGirisYap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::YazilimYapimiProjee.Properties.Resources.indir;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1285, 545);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.radioButtonAdminGiris);
-            this.Controls.Add(this.radioButtonOgretmenGiris);
-            this.Controls.Add(this.radioButtonOgrenciGiris);
-            this.Controls.Add(this.linkLabelKayitOl);
-            this.Controls.Add(this.btnGirisYap);
-            this.Controls.Add(this.txtSifre);
-            this.Controls.Add(this.txtKullaniciAdi);
-            this.Controls.Add(this.lblSifre);
-            this.Controls.Add(this.lblKullaniciAdi);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(1130, 528);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "frmGirisYap";
             this.Text = "SINAV GİRİŞ";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -205,6 +239,8 @@
         private RadioButton radioButtonOgrenciGiris;
         private RadioButton radioButtonOgretmenGiris;
         private RadioButton radioButtonAdminGiris;
-        private LinkLabel linkLabel1;
+        private LinkLabel lnksifreunut;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
     }
 }

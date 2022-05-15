@@ -33,7 +33,15 @@ namespace YazilimYapimiProjee
                 , connnection);
 
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Öğrenci Kaydı Oluşturuldu 😎");
+                 DialogResult giris = MessageBox.Show("Kayıt Başarılı. Giriş yapmak ister misiniz ?");
+                
+                
+                if (giris==DialogResult.OK)
+                {
+                    frmGirisYap frm = new frmGirisYap();
+                    frm.Show();
+                    this.Hide();
+                }
                 connnection.Close();
             }
             else if (radioButtonSinavSorumlusu.Checked && txtAd.Text.Length >= 3 && txtSoyad.Text != "" && txtKullaniciAd.Text != "" && txtEmail.Text.Length >= 13 && txtSifre.Text != "")
@@ -46,19 +54,25 @@ namespace YazilimYapimiProjee
                 , connnection);
 
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Sınav Sorumlusu Kaydı Oluşturuldu 😎");
+               DialogResult giris = MessageBox.Show("Kayıt Başarılı. Giriş yapmak ister misiniz ?");
+                
+                
+                if (giris==DialogResult.OK)
+                {
+                    frmGirisYap frm = new frmGirisYap();
+                    frm.Show();
+                    this.Hide();
+                }
                 connnection.Close();
             }
             else
             {
-                MessageBox.Show("Hatalı giriş");
+                MessageBox.Show("Hatalı Bilgiler Girdiniz");
                 connnection.Close();
             }
         }
 
-        private void radioButtonOgrenci_CheckedChanged(object sender, EventArgs e)
-        {
+       
 
-        }
     }
 }

@@ -41,6 +41,8 @@
             this.radioButtonOgrenci = new System.Windows.Forms.RadioButton();
             this.radioButtonSinavSorumlusu = new System.Windows.Forms.RadioButton();
             this.btnKayit = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblAd
@@ -48,7 +50,7 @@
             this.lblAd.AutoSize = true;
             this.lblAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblAd.ForeColor = System.Drawing.Color.Cyan;
-            this.lblAd.Location = new System.Drawing.Point(260, 92);
+            this.lblAd.Location = new System.Drawing.Point(34, 54);
             this.lblAd.Name = "lblAd";
             this.lblAd.Size = new System.Drawing.Size(40, 20);
             this.lblAd.TabIndex = 0;
@@ -59,7 +61,7 @@
             this.lblSoyad.AutoSize = true;
             this.lblSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSoyad.ForeColor = System.Drawing.Color.Cyan;
-            this.lblSoyad.Location = new System.Drawing.Point(260, 144);
+            this.lblSoyad.Location = new System.Drawing.Point(34, 106);
             this.lblSoyad.Name = "lblSoyad";
             this.lblSoyad.Size = new System.Drawing.Size(77, 20);
             this.lblSoyad.TabIndex = 1;
@@ -70,7 +72,7 @@
             this.lblKullaniciAdi.AutoSize = true;
             this.lblKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblKullaniciAdi.ForeColor = System.Drawing.Color.Cyan;
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(262, 200);
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(34, 162);
             this.lblKullaniciAdi.Name = "lblKullaniciAdi";
             this.lblKullaniciAdi.Size = new System.Drawing.Size(141, 20);
             this.lblKullaniciAdi.TabIndex = 2;
@@ -81,7 +83,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.Cyan;
-            this.lblEmail.Location = new System.Drawing.Point(262, 257);
+            this.lblEmail.Location = new System.Drawing.Point(34, 209);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(64, 20);
             this.lblEmail.TabIndex = 3;
@@ -92,7 +94,7 @@
             this.lblSifre.AutoSize = true;
             this.lblSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSifre.ForeColor = System.Drawing.Color.Cyan;
-            this.lblSifre.Location = new System.Drawing.Point(260, 308);
+            this.lblSifre.Location = new System.Drawing.Point(36, 251);
             this.lblSifre.Name = "lblSifre";
             this.lblSifre.Size = new System.Drawing.Size(62, 20);
             this.lblSifre.TabIndex = 4;
@@ -104,9 +106,10 @@
             this.txtAd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.txtAd.ForeColor = System.Drawing.Color.Snow;
-            this.txtAd.Location = new System.Drawing.Point(501, 92);
+            this.txtAd.Location = new System.Drawing.Point(259, 54);
+            this.txtAd.Multiline = true;
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(226, 20);
+            this.txtAd.Size = new System.Drawing.Size(254, 31);
             this.txtAd.TabIndex = 5;
             // 
             // txtSoyad
@@ -115,9 +118,10 @@
             this.txtSoyad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.txtSoyad.ForeColor = System.Drawing.Color.Snow;
-            this.txtSoyad.Location = new System.Drawing.Point(501, 137);
+            this.txtSoyad.Location = new System.Drawing.Point(259, 106);
+            this.txtSoyad.Multiline = true;
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(226, 20);
+            this.txtSoyad.Size = new System.Drawing.Size(254, 31);
             this.txtSoyad.TabIndex = 6;
             // 
             // txtKullaniciAd
@@ -126,9 +130,10 @@
             this.txtKullaniciAd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtKullaniciAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.txtKullaniciAd.ForeColor = System.Drawing.Color.Snow;
-            this.txtKullaniciAd.Location = new System.Drawing.Point(501, 192);
+            this.txtKullaniciAd.Location = new System.Drawing.Point(259, 151);
+            this.txtKullaniciAd.Multiline = true;
             this.txtKullaniciAd.Name = "txtKullaniciAd";
-            this.txtKullaniciAd.Size = new System.Drawing.Size(226, 20);
+            this.txtKullaniciAd.Size = new System.Drawing.Size(254, 31);
             this.txtKullaniciAd.TabIndex = 7;
             // 
             // txtEmail
@@ -137,9 +142,10 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.Snow;
-            this.txtEmail.Location = new System.Drawing.Point(501, 250);
+            this.txtEmail.Location = new System.Drawing.Point(259, 198);
+            this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(226, 20);
+            this.txtEmail.Size = new System.Drawing.Size(254, 31);
             this.txtEmail.TabIndex = 8;
             // 
             // txtSifre
@@ -148,10 +154,11 @@
             this.txtSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.txtSifre.ForeColor = System.Drawing.Color.Snow;
-            this.txtSifre.Location = new System.Drawing.Point(501, 301);
+            this.txtSifre.Location = new System.Drawing.Point(259, 240);
+            this.txtSifre.Multiline = true;
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '*';
-            this.txtSifre.Size = new System.Drawing.Size(226, 20);
+            this.txtSifre.Size = new System.Drawing.Size(254, 31);
             this.txtSifre.TabIndex = 9;
             // 
             // radioButtonOgrenci
@@ -159,21 +166,20 @@
             this.radioButtonOgrenci.AutoSize = true;
             this.radioButtonOgrenci.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.radioButtonOgrenci.ForeColor = System.Drawing.Color.Gold;
-            this.radioButtonOgrenci.Location = new System.Drawing.Point(368, 380);
+            this.radioButtonOgrenci.Location = new System.Drawing.Point(218, 297);
             this.radioButtonOgrenci.Name = "radioButtonOgrenci";
             this.radioButtonOgrenci.Size = new System.Drawing.Size(114, 24);
             this.radioButtonOgrenci.TabIndex = 10;
             this.radioButtonOgrenci.TabStop = true;
             this.radioButtonOgrenci.Text = "ÖĞRENCİ";
             this.radioButtonOgrenci.UseVisualStyleBackColor = true;
-            this.radioButtonOgrenci.CheckedChanged += new System.EventHandler(this.radioButtonOgrenci_CheckedChanged);
             // 
             // radioButtonSinavSorumlusu
             // 
             this.radioButtonSinavSorumlusu.AutoSize = true;
             this.radioButtonSinavSorumlusu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.radioButtonSinavSorumlusu.ForeColor = System.Drawing.Color.Gold;
-            this.radioButtonSinavSorumlusu.Location = new System.Drawing.Point(709, 380);
+            this.radioButtonSinavSorumlusu.Location = new System.Drawing.Point(391, 297);
             this.radioButtonSinavSorumlusu.Name = "radioButtonSinavSorumlusu";
             this.radioButtonSinavSorumlusu.Size = new System.Drawing.Size(206, 24);
             this.radioButtonSinavSorumlusu.TabIndex = 11;
@@ -183,40 +189,55 @@
             // 
             // btnKayit
             // 
-            this.btnKayit.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnKayit.BackColor = System.Drawing.Color.SpringGreen;
             this.btnKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnKayit.ForeColor = System.Drawing.Color.Silver;
-            this.btnKayit.Location = new System.Drawing.Point(799, 459);
+            this.btnKayit.ForeColor = System.Drawing.Color.Black;
+            this.btnKayit.Location = new System.Drawing.Point(550, 368);
             this.btnKayit.Name = "btnKayit";
-            this.btnKayit.Size = new System.Drawing.Size(189, 35);
+            this.btnKayit.Size = new System.Drawing.Size(213, 40);
             this.btnKayit.TabIndex = 13;
             this.btnKayit.Text = "KAYIT OL";
             this.btnKayit.UseVisualStyleBackColor = false;
             this.btnKayit.Click += new System.EventHandler(this.btnKayit_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblAd);
+            this.groupBox1.Controls.Add(this.lblSoyad);
+            this.groupBox1.Controls.Add(this.radioButtonSinavSorumlusu);
+            this.groupBox1.Controls.Add(this.lblKullaniciAdi);
+            this.groupBox1.Controls.Add(this.radioButtonOgrenci);
+            this.groupBox1.Controls.Add(this.lblEmail);
+            this.groupBox1.Controls.Add(this.txtSifre);
+            this.groupBox1.Controls.Add(this.lblSifre);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtAd);
+            this.groupBox1.Controls.Add(this.txtKullaniciAd);
+            this.groupBox1.Controls.Add(this.txtSoyad);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.Color.Violet;
+            this.groupBox1.Location = new System.Drawing.Point(318, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(715, 350);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Kayıt Panel";
+            // 
             // frmKayitOl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(1148, 547);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(1292, 629);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnKayit);
-            this.Controls.Add(this.radioButtonSinavSorumlusu);
-            this.Controls.Add(this.radioButtonOgrenci);
-            this.Controls.Add(this.txtSifre);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtKullaniciAd);
-            this.Controls.Add(this.txtSoyad);
-            this.Controls.Add(this.txtAd);
-            this.Controls.Add(this.lblSifre);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblKullaniciAdi);
-            this.Controls.Add(this.lblSoyad);
-            this.Controls.Add(this.lblAd);
+            this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmKayitOl";
             this.Text = "SINAV KAYIT";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -235,5 +256,6 @@
         private RadioButton radioButtonOgrenci;
         private RadioButton radioButtonSinavSorumlusu;
         private Button btnKayit;
+        private GroupBox groupBox1;
     }
 }
