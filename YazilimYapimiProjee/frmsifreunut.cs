@@ -22,7 +22,7 @@ namespace YazilimYapimiProjee
 
 
         SqlConnection conn = frmGirisYap.connection;
-        SqlConnection conn1 = new SqlConnection("Data Source=MY-FELLOW; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
+        SqlConnection conn1 = new SqlConnection("Data Source=LAPTOP-HSOIO2VO\\QLEXPRESS; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
         public string tur;
         private void frmsifreunut_Load(object sender, EventArgs e)
         {
@@ -44,7 +44,7 @@ namespace YazilimYapimiProjee
 
 
 
-            if (lbltur.Text == "admin")
+            if (lbltur.Text == "ADMİN")
             {
                 conn.Open();
                 SqlDataReader reader = sqlCommand.ExecuteReader();
@@ -114,7 +114,7 @@ namespace YazilimYapimiProjee
 
             }
 
-            else if (lbltur.Text == "sınav sorumlusu")
+            else if (lbltur.Text == "SINAV SORUMLUSU")
             {
                 conn.Open();
                 SqlDataReader reader2 = sqlCommand2.ExecuteReader();

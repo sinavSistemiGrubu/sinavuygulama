@@ -55,5 +55,10 @@ namespace YazilimYapimiProjee
                 connnection.Close();
             }
         }
+
+        private void radioButtonOgrenci_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

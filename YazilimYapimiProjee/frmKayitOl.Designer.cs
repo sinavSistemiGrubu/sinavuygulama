@@ -166,6 +166,7 @@
             this.radioButtonOgrenci.TabStop = true;
             this.radioButtonOgrenci.Text = "ÖĞRENCİ";
             this.radioButtonOgrenci.UseVisualStyleBackColor = true;
+            this.radioButtonOgrenci.CheckedChanged += new System.EventHandler(this.radioButtonOgrenci_CheckedChanged);
             // 
             // radioButtonSinavSorumlusu
             // 
@@ -212,7 +213,7 @@
             this.Controls.Add(this.lblKullaniciAdi);
             this.Controls.Add(this.lblSoyad);
             this.Controls.Add(this.lblAd);
-            this.Name = "Form2";
+            this.Name = "frmKayitOl";
             this.Text = "SINAV KAYIT";
             this.ResumeLayout(false);
             this.PerformLayout();

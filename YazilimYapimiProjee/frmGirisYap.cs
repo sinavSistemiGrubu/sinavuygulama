@@ -14,7 +14,7 @@ namespace YazilimYapimiProjee
 {
     public partial class frmGirisYap : Form
     {
-        public static SqlConnection connection = new SqlConnection("Data Source=MY-FELLOW; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
+        public static SqlConnection connection = new SqlConnection("Data Source=LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
         public frmGirisYap()
         {
             InitializeComponent();
@@ -88,6 +88,9 @@ namespace YazilimYapimiProjee
                         if (kontrol)
                         {
                             MessageBox.Show("Giriş Başarılı 😃");
+                            frmsinavsorumlusu frmsorumlu = new frmsinavsorumlusu();
+                            frmsorumlu.Show();
+                            this.Hide();
                         }
                         break;
                     }
@@ -114,23 +117,30 @@ namespace YazilimYapimiProjee
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmsifreunut frm = new frmsifreunut();
-
-
-            if (radioButtonAdminGiris.Checked)
+            if (radioButtonAdminGiris.Checked|| radioButtonOgrenciGiris.Checked||radioButtonOgretmenGiris.Checked)
             {
-                frm.tur = radioButtonAdminGiris.Text;
-            }
-            else if (radioButtonOgrenciGiris.Checked)
-            {
-                frm.tur = radioButtonOgrenciGiris.Text;
-            }
-            else if (radioButtonOgretmenGiris.Checked)
-            {
-                frm.tur = radioButtonOgretmenGiris.Text;
-            }
-            frm.Show();
+                if (radioButtonAdminGiris.Checked)
+                {
+                    frm.tur = radioButtonAdminGiris.Text;
+                }
+                else if (radioButtonOgrenciGiris.Checked)
+                {
+                    frm.tur = radioButtonOgrenciGiris.Text;
+                }
+                else if (radioButtonOgretmenGiris.Checked)
+                {
+                    frm.tur = radioButtonOgretmenGiris.Text;
+                }
+                frm.Show();
 
-            this.Hide();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("giriş türünü seç");
+            }
+          
+          
         }
     }
 }

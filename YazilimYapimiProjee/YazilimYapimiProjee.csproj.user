@@ -11,5 +11,14 @@
     <Compile Update="frmsifreunut.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmsinavsorumlusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmsoruekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="yuvarlakbutton.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
