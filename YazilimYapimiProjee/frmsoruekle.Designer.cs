@@ -211,6 +211,7 @@
             this.cmbxunite.Name = "cmbxunite";
             this.cmbxunite.Size = new System.Drawing.Size(151, 28);
             this.cmbxunite.TabIndex = 12;
+            this.cmbxunite.SelectedIndexChanged += new System.EventHandler(this.cmbxunite_SelectedIndexChanged);
             // 
             // groupBox1
             // 

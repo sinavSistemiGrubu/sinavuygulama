@@ -27,14 +27,20 @@ namespace YazilimYapimiProjee
         private void btnEkle_Click(object sender, EventArgs e)
         {
 
+           
             connnection.Open();
-            SqlCommand cmd = new SqlCommand("insert into Sorular(SoruText,SoruResim,DogruCevap,YanlisCevap1,YanlisCevap2,YanlisCevap3)values(@p1,@p2,@p3,@p4,@p5,@p6) ", connnection);
+          
+
+            SqlCommand cmd = new SqlCommand("insert into Sorular(SoruText,SoruResim,DersId,UniteId,DogruCevap,YanlisCevap1,YanlisCevap2,YanlisCevap3)values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8) ", connnection);
+           
             cmd.Parameters.AddWithValue("@p1", txtsoru.Text);
             cmd.Parameters.AddWithValue("@p2", txtYol.Text);
-            cmd.Parameters.AddWithValue("@p3", dogrucevap);
-            cmd.Parameters.AddWithValue("@p4", yanliscevap1);
-            cmd.Parameters.AddWithValue("@p5", yanliscevap2);
-            cmd.Parameters.AddWithValue("@p6", yanliscevap3);
+            cmd.Parameters.AddWithValue("@p3", DersId);
+            cmd.Parameters.AddWithValue("@p4", UniteId);
+            cmd.Parameters.AddWithValue("@p5", dogrucevap);
+            cmd.Parameters.AddWithValue("@p6", yanliscevap1);
+            cmd.Parameters.AddWithValue("@p7", yanliscevap2);
+            cmd.Parameters.AddWithValue("@p8", yanliscevap3);
             cmd.ExecuteNonQuery();
             MessageBox.Show("yeni soru başarıyla eklendi");
             connnection.Close();
@@ -115,6 +121,9 @@ namespace YazilimYapimiProjee
             btnC.Enabled = true;
             btnA.Enabled = true;
             btnD.Enabled = true;
+            cmbxunite.Items.Clear();
+            cmbxunite.Text = "";
+            cmbxders.Text = "";
 
         }
         
@@ -135,6 +144,7 @@ namespace YazilimYapimiProjee
 
         }
         int DersId;
+        int UniteId;
         private void cmbxders_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -167,10 +177,35 @@ namespace YazilimYapimiProjee
 
                 cmbxunite.Items.Add(dr1["UniteAd"]);
             }
+            
 
             connnection.Close();
             conn.Close();
             
+        }
+
+        private void cmbxunite_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            connnection.Open();
+           
+            string tur;
+
+
+            tur = cmbxunite.Text;
+
+            SqlCommand sqlCommand2 = new SqlCommand("Select * from tblUnite", connnection);
+
+            SqlDataReader dr = sqlCommand2.ExecuteReader();
+            while (dr.Read())
+            {
+
+                if (tur == dr["UniteAd"].ToString())
+                {
+                    UniteId = Convert.ToInt32(dr["UniteId"]);
+
+                }
+            }
+            connnection.Close();
         }
     }
 }
