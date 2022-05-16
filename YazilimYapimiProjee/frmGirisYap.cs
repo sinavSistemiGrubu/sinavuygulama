@@ -142,5 +142,12 @@ namespace YazilimYapimiProjee
           
           
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmsoruekle frm2 = new frmsoruekle();
+            frm2.Show();
+            this.Hide();
+        }
     }
 }

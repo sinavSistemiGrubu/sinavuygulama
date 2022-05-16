@@ -40,6 +40,7 @@
             this.lnksifreunut = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -209,6 +210,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Giriş Türünü Seçiniz";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(193, 284);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmGirisYap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -216,6 +227,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1130, 528);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmGirisYap";
@@ -242,5 +254,6 @@
         private LinkLabel lnksifreunut;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
+        private Button button1;
     }
 }

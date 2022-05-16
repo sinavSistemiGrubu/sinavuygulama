@@ -18,6 +18,8 @@ namespace YazilimYapimiProjee
             InitializeComponent();
         }
         SqlConnection connnection = frmGirisYap.connection;
+        SqlConnection conn = new SqlConnection("Data Source=LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
+
         string dogrucevap;
         string yanliscevap1;
         string yanliscevap2;
@@ -114,6 +116,61 @@ namespace YazilimYapimiProjee
             btnA.Enabled = true;
             btnD.Enabled = true;
 
+        }
+        
+        private void frmsoruekle_Load(object sender, EventArgs e)
+        {
+       
+            connnection.Open();
+            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Dersler",connnection);
+            SqlDataReader dr;
+            dr = cmd1.ExecuteReader();
+            while (dr.Read())
+            {
+               cmbxders.Items.Add(dr["DersAdi"]);
+            }
+         
+          
+            connnection.Close();
+
+        }
+        int DersId;
+        private void cmbxders_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            connnection.Open();
+            conn.Open();
+            string tur;
+           
+
+            tur = cmbxders.Text;
+
+            SqlCommand sqlCommand2 = new SqlCommand("Select * from Dersler", connnection);
+           
+            SqlDataReader dr = sqlCommand2.ExecuteReader();
+           
+            
+            while (dr.Read())
+            {
+                
+                if (tur == dr["DersAdi"].ToString() )
+                {
+                    DersId = Convert.ToInt32(dr["DersId"]);
+                  
+                }
+            }
+            SqlCommand sqlCommand3 = new SqlCommand("select UniteAd from tblunite where DersId=@p1", conn);
+            sqlCommand3.Parameters.AddWithValue("@p1", DersId);
+            SqlDataReader dr1 = sqlCommand3.ExecuteReader();
+            while (dr1.Read())
+            {
+
+                cmbxunite.Items.Add(dr1["UniteAd"]);
+            }
+
+            connnection.Close();
+            conn.Close();
+            
         }
     }
 }
