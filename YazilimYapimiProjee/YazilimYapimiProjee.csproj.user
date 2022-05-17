@@ -11,6 +11,9 @@
     <Compile Update="frmsifreunut.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmsinavolustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmsinavsorumlusu.cs">
       <SubType>Form</SubType>
     </Compile>
