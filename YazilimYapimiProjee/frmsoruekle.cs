@@ -19,7 +19,7 @@ namespace YazilimYapimiProjee
         }
         SqlConnection connnection = frmGirisYap.connection;
         SqlConnection conn = new SqlConnection("Data Source=LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
-
+        string secenek;
         string dogrucevap;
         string yanliscevap1;
         string yanliscevap2;
@@ -31,7 +31,7 @@ namespace YazilimYapimiProjee
             connnection.Open();
           
 
-            SqlCommand cmd = new SqlCommand("insert into Sorular(SoruText,SoruResim,DersId,UniteId,DogruCevap,YanlisCevap1,YanlisCevap2,YanlisCevap3)values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8) ", connnection);
+            SqlCommand cmd = new SqlCommand("insert into Sorular(SoruText,SoruResim,DersId,UniteId,DogruCevap,YanlisCevap1,YanlisCevap2,YanlisCevap3,DogruSecenek)values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9) ", connnection);
            
             cmd.Parameters.AddWithValue("@p1", txtsoru.Text);
             cmd.Parameters.AddWithValue("@p2", txtYol.Text);
@@ -41,6 +41,7 @@ namespace YazilimYapimiProjee
             cmd.Parameters.AddWithValue("@p6", yanliscevap1);
             cmd.Parameters.AddWithValue("@p7", yanliscevap2);
             cmd.Parameters.AddWithValue("@p8", yanliscevap3);
+            cmd.Parameters.AddWithValue("@p9", secenek);
             cmd.ExecuteNonQuery();
             MessageBox.Show("yeni soru başarıyla eklendi");
             connnection.Close();
@@ -52,6 +53,7 @@ namespace YazilimYapimiProjee
             yanliscevap1 = txtB.Text;
             yanliscevap2 = txtC.Text;
             yanliscevap3 = txtD.Text;
+            secenek = btnA.Text;
             btnA.BackColor = Color.Red;
             btnB.Enabled = false;
             btnC.Enabled = false;
@@ -66,6 +68,7 @@ namespace YazilimYapimiProjee
             yanliscevap1 = txtA.Text;
             yanliscevap2 = txtC.Text;
             yanliscevap3 = txtD.Text;
+            secenek = btnB.Text;
             btnB.BackColor = Color.Red;
             btnA.Enabled = false;
             btnC.Enabled = false;
@@ -78,6 +81,7 @@ namespace YazilimYapimiProjee
             yanliscevap1 = txtB.Text;
             yanliscevap2 = txtA.Text;
             yanliscevap3 = txtD.Text;
+            secenek = btnC.Text;
             btnC.BackColor = Color.Red;
             btnB.Enabled = false;
             btnA.Enabled = false;
@@ -90,6 +94,7 @@ namespace YazilimYapimiProjee
             yanliscevap1 = txtB.Text;
             yanliscevap2 = txtC.Text;
             yanliscevap3 = txtA.Text;
+            secenek = btnD.Text;
             btnD.BackColor = Color.Red;
             btnB.Enabled = false;
             btnC.Enabled = false;

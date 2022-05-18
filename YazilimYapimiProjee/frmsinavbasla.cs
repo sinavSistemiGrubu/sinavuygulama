@@ -17,12 +17,11 @@ namespace YazilimYapimiProjee
         {
             InitializeComponent();
         }
-        List<int> sinavListe = new List<int>();
+        public int ogrId;
         public int a = 0;
         int[] SinavSoruId = new int[10];
         public int id;
-        SqlConnection conn = frmGirisYap.connection;
-        SqlConnection conn2 = frmGirisYap.connection;
+        
         int sayac = 0;
         string DogruSecenek = ""; string OgrenciSecenek = "";
         SqlConnection connection = new SqlConnection("Data Source=LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
@@ -30,8 +29,8 @@ namespace YazilimYapimiProjee
        
         private void frmsinavbasla_Load(object sender, EventArgs e)
         {
-            conn.Open();
-           SqlCommand cmd = new SqlCommand("SELECT * FROM tblSinav where SinavID=@p1",conn);
+            connection.Open();
+           SqlCommand cmd = new SqlCommand("SELECT * FROM tblSinav where SinavID=@p1",connection);
             cmd.Parameters.AddWithValue("@p1", id);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -39,52 +38,94 @@ namespace YazilimYapimiProjee
                 SinavSoruId[a] = Convert.ToInt32(dr[1]);
                 a++;
             }
-            conn.Close();
+            connection.Close();
             SoruCek();
 
         }
         public void SoruCek()
         {
-            conn.Open();
-            SqlCommand cmd3 = new SqlCommand("Select * from Sorular  where soruID=@p2", conn);
-            cmd3.Parameters.AddWithValue("@p2", SinavSoruId[sayac]);
-            SqlDataReader dr2 = cmd3.ExecuteReader();
-            if(dr2.Read())
+            if (sayac < 10) 
             {
-                lblsoru.Text=Convert.ToString(dr2[1]);
-                radioButton1.Text = Convert.ToString(dr2[5]);
-                radioButton2.Text = Convert.ToString(dr2[6]);
-                radioButton3.Text = Convert.ToString(dr2[7]);
-                radioButton4.Text = Convert.ToString(dr2[8]);
-                DogruSecenek= Convert.ToString(dr2[9]);
+                connection.Open();
+                SqlCommand cmd3 = new SqlCommand("Select * from Sorular  where soruID=@p2", connection);
+                cmd3.Parameters.AddWithValue("@p2", SinavSoruId[sayac]);
+                SqlDataReader dr2 = cmd3.ExecuteReader();
+                if (dr2.Read())
+                {
+
+                    lblsoru.Text = Convert.ToString(dr2[1]);
+                    pictureBox1.ImageLocation = dr2[2].ToString();
+                    radioButtonSecenekA.Text = Convert.ToString(dr2[5]);
+                    radioButtonSecenekB.Text = Convert.ToString(dr2[6]);
+                    radioButtonSecenekC.Text = Convert.ToString(dr2[7]);
+                    radioButtonSecenekD.Text = Convert.ToString(dr2[8]);
+                    DogruSecenek = Convert.ToString(dr2[9]);
+                }
+                connection.Close();
+                sayac++;
             }
-            conn.Close();
-            sayac++;
+            else
+            {
+                MessageBox.Show("sinav bitmiştir");
+            }
+           
+
         }
         public void kontrol()
         {
-            if (radioButton1.Checked) OgrenciSecenek = "A";
-            if (radioButton2.Checked) OgrenciSecenek = "B";
-            if (radioButton3.Checked) OgrenciSecenek = "C";
-            if (radioButton4.Checked) OgrenciSecenek = "D";
+            connection.Open();
+          
+            if (radioButtonSecenekA.Checked) OgrenciSecenek = "A";
+            if (radioButtonSecenekB.Checked) OgrenciSecenek = "B";
+            if (radioButtonSecenekC.Checked) OgrenciSecenek = "C";
+            if (radioButtonSecenekD.Checked) OgrenciSecenek = "D";
 
-            if (OgrenciSecenek == DogruSecenek) MessageBox.Show("Dogru");
-            else MessageBox.Show("yanlış");
+            if (OgrenciSecenek == DogruSecenek)
+            {
+                MessageBox.Show("Dogru");
+              
+                CevapKontol(ogrId, id, SinavSoruId[sayac-1], true);
+
+
+            }
+            else
+            {
+                MessageBox.Show("yanlış");
+                CevapKontol(ogrId, id, SinavSoruId[sayac-1], false);
+              
+            }
+            connection.Close();
         }
-        bool Saykon = false;
+       
         private void btnsonraki_Click(object sender, EventArgs e)
         {
             kontrol();
             SoruCek();
+            radioButtonSecenekA.Checked = false;
+            radioButtonSecenekB.Checked = false;
+            radioButtonSecenekC.Checked = false;
+            radioButtonSecenekD.Checked = false;
+
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void CevapKontol(int a ,int b ,int c,bool d)
         {
-            groupBox1.Visible = true;
-            lblsoru.Visible = true;
+            
+          
+            SqlCommand cmd = new SqlCommand("insert INTO  OgrenciSinavDurum (OgrenciID,SinavID,SoruID,CevapDurum) values (@p1,@p2,@p3,@p4) ", connection);
+            cmd.Parameters.AddWithValue("@p1", a);
+            cmd.Parameters.AddWithValue("@p2", b);
+            cmd.Parameters.AddWithValue("p3", c);
+            cmd.Parameters.AddWithValue("@p4", d);
+            cmd.ExecuteNonQuery();
+          
+        
+          
+
+
         }
-        
-        
+
+
     }
 }

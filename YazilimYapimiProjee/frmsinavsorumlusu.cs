@@ -23,5 +23,12 @@ namespace YazilimYapimiProjee
             frm.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmsinavolustur frm = new frmsinavolustur();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

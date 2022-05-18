@@ -58,3 +58,5 @@ C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.
 C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmOgrenciPanel.resources
 C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmsinavbasla.resources
 C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmsınav.resources
+C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmanaliz.resources
+C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmsinavsonuc.resources

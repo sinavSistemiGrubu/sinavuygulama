@@ -30,124 +30,130 @@
         {
             this.btnsonraki = new System.Windows.Forms.Button();
             this.lblsoru = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonSecenekA = new System.Windows.Forms.RadioButton();
+            this.radioButtonSecenekB = new System.Windows.Forms.RadioButton();
+            this.radioButtonSecenekC = new System.Windows.Forms.RadioButton();
+            this.radioButtonSecenekD = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnsonraki
             // 
-            this.btnsonraki.Location = new System.Drawing.Point(952, 413);
+            this.btnsonraki.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnsonraki.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnsonraki.Location = new System.Drawing.Point(869, 498);
             this.btnsonraki.Name = "btnsonraki";
-            this.btnsonraki.Size = new System.Drawing.Size(175, 41);
+            this.btnsonraki.Size = new System.Drawing.Size(186, 51);
             this.btnsonraki.TabIndex = 0;
             this.btnsonraki.Text = "Sonraki Soru";
-            this.btnsonraki.UseVisualStyleBackColor = true;
+            this.btnsonraki.UseVisualStyleBackColor = false;
             this.btnsonraki.Click += new System.EventHandler(this.btnsonraki_Click);
             // 
             // lblsoru
             // 
             this.lblsoru.AutoSize = true;
-            this.lblsoru.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblsoru.Location = new System.Drawing.Point(211, 92);
+            this.lblsoru.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblsoru.Location = new System.Drawing.Point(22, 85);
             this.lblsoru.Name = "lblsoru";
-            this.lblsoru.Size = new System.Drawing.Size(28, 38);
+            this.lblsoru.Size = new System.Drawing.Size(20, 28);
             this.lblsoru.TabIndex = 1;
             this.lblsoru.Text = "-";
-            this.lblsoru.Visible = false;
             // 
-            // radioButton1
+            // radioButtonSecenekA
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(80, 46);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(117, 24);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonSecenekA.AutoSize = true;
+            this.radioButtonSecenekA.Location = new System.Drawing.Point(37, 49);
+            this.radioButtonSecenekA.Name = "radioButtonSecenekA";
+            this.radioButtonSecenekA.Size = new System.Drawing.Size(36, 24);
+            this.radioButtonSecenekA.TabIndex = 3;
+            this.radioButtonSecenekA.TabStop = true;
+            this.radioButtonSecenekA.Text = "-";
+            this.radioButtonSecenekA.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButtonSecenekB
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(365, 46);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(117, 24);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonSecenekB.AutoSize = true;
+            this.radioButtonSecenekB.Location = new System.Drawing.Point(37, 93);
+            this.radioButtonSecenekB.Name = "radioButtonSecenekB";
+            this.radioButtonSecenekB.Size = new System.Drawing.Size(36, 24);
+            this.radioButtonSecenekB.TabIndex = 4;
+            this.radioButtonSecenekB.TabStop = true;
+            this.radioButtonSecenekB.Text = "-";
+            this.radioButtonSecenekB.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButtonSecenekC
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(80, 128);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(117, 24);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButtonSecenekC.AutoSize = true;
+            this.radioButtonSecenekC.Location = new System.Drawing.Point(37, 143);
+            this.radioButtonSecenekC.Name = "radioButtonSecenekC";
+            this.radioButtonSecenekC.Size = new System.Drawing.Size(36, 24);
+            this.radioButtonSecenekC.TabIndex = 5;
+            this.radioButtonSecenekC.TabStop = true;
+            this.radioButtonSecenekC.Text = "-";
+            this.radioButtonSecenekC.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radioButtonSecenekD
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(365, 128);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(117, 24);
-            this.radioButton4.TabIndex = 6;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButtonSecenekD.AutoSize = true;
+            this.radioButtonSecenekD.Location = new System.Drawing.Point(37, 188);
+            this.radioButtonSecenekD.Name = "radioButtonSecenekD";
+            this.radioButtonSecenekD.Size = new System.Drawing.Size(36, 24);
+            this.radioButtonSecenekD.TabIndex = 6;
+            this.radioButtonSecenekD.TabStop = true;
+            this.radioButtonSecenekD.Text = "-";
+            this.radioButtonSecenekD.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1008, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(869, 108);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 163);
+            this.pictureBox1.Size = new System.Drawing.Size(255, 259);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Location = new System.Drawing.Point(61, 340);
+            this.groupBox1.Controls.Add(this.radioButtonSecenekA);
+            this.groupBox1.Controls.Add(this.radioButtonSecenekB);
+            this.groupBox1.Controls.Add(this.radioButtonSecenekD);
+            this.groupBox1.Controls.Add(this.radioButtonSecenekC);
+            this.groupBox1.Location = new System.Drawing.Point(72, 382);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(612, 159);
+            this.groupBox1.Size = new System.Drawing.Size(777, 278);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Visible = false;
+            this.groupBox1.Text = "SEÇENEKLER";
             // 
-            // button2
+            // groupBox2
             // 
-            this.button2.Location = new System.Drawing.Point(774, 413);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 41);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "btnbasla";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.groupBox2.Controls.Add(this.lblsoru);
+            this.groupBox2.Location = new System.Drawing.Point(72, 96);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(777, 271);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "SORU";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // frmsinavbasla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 535);
-            this.Controls.Add(this.button2);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1330, 736);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblsoru);
             this.Controls.Add(this.btnsonraki);
             this.Name = "frmsinavbasla";
             this.Text = "frmsinavbasla";
@@ -155,8 +161,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -164,12 +171,13 @@
 
         private Button btnsonraki;
         private Label lblsoru;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton3;
-        private RadioButton radioButton4;
+        private RadioButton radioButtonSecenekA;
+        private RadioButton radioButtonSecenekB;
+        private RadioButton radioButtonSecenekC;
+        private RadioButton radioButtonSecenekD;
         private PictureBox pictureBox1;
         private GroupBox groupBox1;
-        private Button button2;
+        private GroupBox groupBox2;
+        private OpenFileDialog openFileDialog1;
     }
 }

@@ -63,6 +63,7 @@ namespace YazilimYapimiProjee
                         {
                             MessageBox.Show("Giriş Başarılı 😃");
                             frmOgrenciPanel frm = new frmOgrenciPanel();
+                            frm.ogrID = Convert.ToInt32(reader1["ogrenciId"].ToString());
                             frm.Show();
                             this.Hide();
                         }
@@ -70,6 +71,7 @@ namespace YazilimYapimiProjee
                     }
 
                 }
+
                 connection.Close();
                 if (kontrol == false)
                 {
@@ -143,22 +145,12 @@ namespace YazilimYapimiProjee
                 MessageBox.Show("giriş türünü seç");
             }
           
-          
+      
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmsoruekle frm2 = new frmsoruekle();
-            frm2.Show();
-            this.Hide();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            frmsinavolustur frmsinavolustur = new frmsinavolustur();
-            frmsinavolustur.Show();
-            this.Hide();
-            
-        }
+      
+
+        
     }
 }

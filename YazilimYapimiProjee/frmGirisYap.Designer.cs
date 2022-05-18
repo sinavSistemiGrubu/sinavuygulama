@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblKullaniciAdi = new System.Windows.Forms.Label();
-            this.lblSifre = new System.Windows.Forms.Label();
-            this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
-            this.txtSifre = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGirisYap));
             this.btnGirisYap = new System.Windows.Forms.Button();
             this.linkLabelKayitOl = new System.Windows.Forms.LinkLabel();
             this.radioButtonOgrenciGiris = new System.Windows.Forms.RadioButton();
@@ -39,63 +36,15 @@
             this.radioButtonAdminGiris = new System.Windows.Forms.RadioButton();
             this.lnksifreunut = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblKullaniciAdi
-            // 
-            this.lblKullaniciAdi.AutoSize = true;
-            this.lblKullaniciAdi.BackColor = System.Drawing.Color.Transparent;
-            this.lblKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblKullaniciAdi.ForeColor = System.Drawing.Color.White;
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(6, 45);
-            this.lblKullaniciAdi.Name = "lblKullaniciAdi";
-            this.lblKullaniciAdi.Size = new System.Drawing.Size(143, 22);
-            this.lblKullaniciAdi.TabIndex = 0;
-            this.lblKullaniciAdi.Text = "KULLANICI ADI";
-            // 
-            // lblSifre
-            // 
-            this.lblSifre.AutoSize = true;
-            this.lblSifre.BackColor = System.Drawing.Color.Transparent;
-            this.lblSifre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblSifre.ForeColor = System.Drawing.Color.White;
-            this.lblSifre.Location = new System.Drawing.Point(85, 80);
-            this.lblSifre.Name = "lblSifre";
-            this.lblSifre.Size = new System.Drawing.Size(64, 22);
-            this.lblSifre.TabIndex = 1;
-            this.lblSifre.Text = "ŞİFRE";
-            // 
-            // txtKullaniciAdi
-            // 
-            this.txtKullaniciAdi.BackColor = System.Drawing.Color.Crimson;
-            this.txtKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.txtKullaniciAdi.ForeColor = System.Drawing.Color.Snow;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(161, 43);
-            this.txtKullaniciAdi.Multiline = true;
-            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(211, 27);
-            this.txtKullaniciAdi.TabIndex = 1;
-            // 
-            // txtSifre
-            // 
-            this.txtSifre.BackColor = System.Drawing.Color.Crimson;
-            this.txtSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.txtSifre.ForeColor = System.Drawing.Color.Snow;
-            this.txtSifre.Location = new System.Drawing.Point(161, 75);
-            this.txtSifre.Multiline = true;
-            this.txtSifre.Name = "txtSifre";
-            this.txtSifre.PasswordChar = '*';
-            this.txtSifre.Size = new System.Drawing.Size(211, 27);
-            this.txtSifre.TabIndex = 2;
             // 
             // btnGirisYap
             // 
@@ -182,20 +131,53 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.txtKullaniciAdi);
             this.groupBox1.Controls.Add(this.txtSifre);
             this.groupBox1.Controls.Add(this.lnksifreunut);
-            this.groupBox1.Controls.Add(this.lblKullaniciAdi);
-            this.groupBox1.Controls.Add(this.lblSifre);
             this.groupBox1.Controls.Add(this.btnGirisYap);
             this.groupBox1.Controls.Add(this.linkLabelKayitOl);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(401, 195);
+            this.groupBox1.Location = new System.Drawing.Point(526, 185);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(452, 255);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sistem Giriş";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(369, 132);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(8, 8);
+            this.progressBar1.TabIndex = 11;
+            // 
+            // txtKullaniciAdi
+            // 
+            this.txtKullaniciAdi.BackColor = System.Drawing.Color.Crimson;
+            this.txtKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txtKullaniciAdi.ForeColor = System.Drawing.Color.Snow;
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(113, 42);
+            this.txtKullaniciAdi.Multiline = true;
+            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
+            this.txtKullaniciAdi.PlaceholderText = "Kullanıcı Adı";
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(211, 27);
+            this.txtKullaniciAdi.TabIndex = 1;
+            // 
+            // txtSifre
+            // 
+            this.txtSifre.BackColor = System.Drawing.Color.Crimson;
+            this.txtSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txtSifre.ForeColor = System.Drawing.Color.Snow;
+            this.txtSifre.Location = new System.Drawing.Point(113, 75);
+            this.txtSifre.Multiline = true;
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.PasswordChar = '*';
+            this.txtSifre.PlaceholderText = "Şifre";
+            this.txtSifre.Size = new System.Drawing.Size(211, 27);
+            this.txtSifre.TabIndex = 2;
             // 
             // groupBox2
             // 
@@ -204,60 +186,46 @@
             this.groupBox2.Controls.Add(this.radioButtonAdminGiris);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Location = new System.Drawing.Point(381, 76);
+            this.groupBox2.Location = new System.Drawing.Point(526, 65);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(509, 90);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Giriş Türünü Seçiniz";
+            this.groupBox2.Text = "Giriş Türü";
             // 
-            // button1
+            // pictureBox1
             // 
-            this.button1.Location = new System.Drawing.Point(193, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(209, 348);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(63, 65);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(378, 394);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // frmGirisYap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1130, 528);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1175, 545);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmGirisYap";
             this.Text = "SINAV GİRİŞ";
+          
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Label lblKullaniciAdi;
-        private Label lblSifre;
-        private TextBox txtKullaniciAdi;
-        private TextBox txtSifre;
         private Button btnGirisYap;
         private LinkLabel linkLabelKayitOl;
         private RadioButton radioButtonOgrenciGiris;
@@ -266,7 +234,9 @@
         private LinkLabel lnksifreunut;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private Button button1;
-        private Button button2;
+        private PictureBox pictureBox1;
+        private ProgressBar progressBar1;
+        private TextBox txtKullaniciAdi;
+        private TextBox txtSifre;
     }
 }

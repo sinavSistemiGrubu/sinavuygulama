@@ -69,6 +69,7 @@
             // 
             // txtsoru
             // 
+            this.txtsoru.BackColor = System.Drawing.Color.Brown;
             this.txtsoru.Location = new System.Drawing.Point(30, 63);
             this.txtsoru.Multiline = true;
             this.txtsoru.Name = "txtsoru";
@@ -289,6 +290,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Brown;
             this.ClientSize = new System.Drawing.Size(1309, 718);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -300,6 +302,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtsoru);
             this.Controls.Add(this.btnEkle);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.Name = "frmsoruekle";
             this.Text = "frmsoruekle";
             this.Load += new System.EventHandler(this.frmsoruekle_Load);
