@@ -38,8 +38,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbxsinavid
@@ -56,7 +58,7 @@
             "8",
             "9",
             "10"});
-            this.cbxsinavid.Location = new System.Drawing.Point(597, 33);
+            this.cbxsinavid.Location = new System.Drawing.Point(548, 41);
             this.cbxsinavid.Name = "cbxsinavid";
             this.cbxsinavid.Size = new System.Drawing.Size(151, 28);
             this.cbxsinavid.TabIndex = 0;
@@ -64,51 +66,55 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(365, 36);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(177, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 20);
+            this.label1.Size = new System.Drawing.Size(336, 28);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Görmek İstediğiniz Sinavı Seçiniz";
+            this.label1.Text = "Görmek İstediğiniz Sinavı Seçiniz:";
             // 
             // btnsonuc
             // 
-            this.btnsonuc.Location = new System.Drawing.Point(616, 67);
+            this.btnsonuc.BackColor = System.Drawing.Color.Red;
+            this.btnsonuc.Location = new System.Drawing.Point(526, 86);
             this.btnsonuc.Name = "btnsonuc";
-            this.btnsonuc.Size = new System.Drawing.Size(94, 29);
+            this.btnsonuc.Size = new System.Drawing.Size(190, 47);
             this.btnsonuc.TabIndex = 2;
             this.btnsonuc.Text = "Sonuçları Gör";
-            this.btnsonuc.UseVisualStyleBackColor = true;
+            this.btnsonuc.UseVisualStyleBackColor = false;
             this.btnsonuc.Click += new System.EventHandler(this.btnsonuc_Click);
             // 
             // txtdogru
             // 
-            this.txtdogru.Location = new System.Drawing.Point(193, 26);
+            this.txtdogru.Location = new System.Drawing.Point(193, 33);
             this.txtdogru.Name = "txtdogru";
-            this.txtdogru.Size = new System.Drawing.Size(125, 27);
+            this.txtdogru.Size = new System.Drawing.Size(180, 34);
             this.txtdogru.TabIndex = 3;
             // 
             // txtyanlis
             // 
             this.txtyanlis.Location = new System.Drawing.Point(193, 73);
             this.txtyanlis.Name = "txtyanlis";
-            this.txtyanlis.Size = new System.Drawing.Size(125, 27);
+            this.txtyanlis.Size = new System.Drawing.Size(180, 34);
             this.txtyanlis.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(82, 29);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(65, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
+            this.label2.Size = new System.Drawing.Size(122, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Doğru Sayısı";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(89, 76);
+            this.label3.Location = new System.Drawing.Point(76, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 20);
+            this.label3.Size = new System.Drawing.Size(111, 28);
             this.label3.TabIndex = 1;
             this.label3.Text = "Yanlış sayısı";
             // 
@@ -118,7 +124,9 @@
             this.groupBox1.Controls.Add(this.txtyanlis);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(343, 173);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(349, 139);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(557, 125);
             this.groupBox1.TabIndex = 4;
@@ -128,30 +136,43 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(324, 372);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 23);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(604, 263);
+            this.dataGridView1.Size = new System.Drawing.Size(1080, 328);
             this.dataGridView1.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(505, 319);
+            this.button1.Location = new System.Drawing.Point(526, 286);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 29);
+            this.button1.Size = new System.Drawing.Size(190, 57);
             this.button1.TabIndex = 6;
             this.button1.Text = "Sorular ve Cevapları";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox2.Location = new System.Drawing.Point(87, 349);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1086, 354);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "CEVAPLANAN SORULAR";
+            // 
             // frmsinavsonuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1359, 704);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnsonuc);
             this.Controls.Add(this.label1);
@@ -161,6 +182,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +200,6 @@
         private GroupBox groupBox1;
         private DataGridView dataGridView1;
         private Button button1;
+        private GroupBox groupBox2;
     }
 }

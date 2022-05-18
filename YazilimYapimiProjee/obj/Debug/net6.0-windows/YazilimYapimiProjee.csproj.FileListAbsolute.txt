@@ -58,7 +58,6 @@ C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.
 C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmOgrenciPanel.resources
 C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmsinavbasla.resources
 C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmsınav.resources
-C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmanaliz.resources
 C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmsinavsonuc.resources
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\New folder\OtelRezervasyon\sinavuygulama\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.csproj.AssemblyReference.cache
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\New folder\OtelRezervasyon\sinavuygulama\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmGirisYap.resources
@@ -94,3 +93,4 @@ C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\New folder\
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\New folder\OtelRezervasyon\sinavuygulama\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.csproj.CopyComplete
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\New folder\OtelRezervasyon\sinavuygulama\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.genruntimeconfig.cache
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\New folder\OtelRezervasyon\sinavuygulama\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\ref\YazilimYapimiProjee.dll
+C:\Users\tuglu\OneDrive\Bureau\sinavuygulama\YazilimYapimiProjee\obj\Debug\net6.0-windows\YazilimYapimiProjee.frmadmin.resources

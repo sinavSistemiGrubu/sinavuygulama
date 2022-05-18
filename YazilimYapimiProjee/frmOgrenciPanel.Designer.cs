@@ -36,6 +36,8 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.SeaGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button1.Location = new System.Drawing.Point(229, 190);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -49,7 +51,8 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkOrchid;
-            this.button3.Location = new System.Drawing.Point(698, 190);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(577, 190);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(292, 62);
@@ -71,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1261, 506);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);

@@ -46,6 +46,12 @@ namespace YazilimYapimiProjee
             conn.Close();
         }
 
-       
+        private void yuvarlakButon1_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm = new frmGirisYap();
+            frm.Show();
+            this.Hide();
+
+        }
     }
 }

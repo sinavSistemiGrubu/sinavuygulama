@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cboxSınavId = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.yuvarlakButon1 = new ShapedButton.YuvarlakButon();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // 
             this.cboxSınavId.BackColor = System.Drawing.Color.SlateGray;
             this.cboxSınavId.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cboxSınavId.ForeColor = System.Drawing.Color.Brown;
+            this.cboxSınavId.ForeColor = System.Drawing.Color.White;
             this.cboxSınavId.FormattingEnabled = true;
             this.cboxSınavId.Items.AddRange(new object[] {
             "1",
@@ -91,6 +92,18 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "OLUŞTURMAK İSTEDİĞİNİZ SINAVI SEÇİNİZ :";
             // 
+            // yuvarlakButon1
+            // 
+            this.yuvarlakButon1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.yuvarlakButon1.ForeColor = System.Drawing.Color.White;
+            this.yuvarlakButon1.Location = new System.Drawing.Point(1, 12);
+            this.yuvarlakButon1.Name = "yuvarlakButon1";
+            this.yuvarlakButon1.Size = new System.Drawing.Size(58, 29);
+            this.yuvarlakButon1.TabIndex = 4;
+            this.yuvarlakButon1.Text = "Geri";
+            this.yuvarlakButon1.UseVisualStyleBackColor = false;
+            this.yuvarlakButon1.Click += new System.EventHandler(this.yuvarlakButon1_Click);
+            // 
             // frmsinavolustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -98,6 +111,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1120, 510);
+            this.Controls.Add(this.yuvarlakButon1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cboxSınavId);
             this.Controls.Add(this.label1);
@@ -117,5 +131,6 @@
         private Label label1;
         private ComboBox cboxSınavId;
         private Label label2;
+        private ShapedButton.YuvarlakButon yuvarlakButon1;
     }
 }

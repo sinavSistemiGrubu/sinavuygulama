@@ -212,5 +212,12 @@ namespace YazilimYapimiProjee
             }
             connnection.Close();
         }
+
+        private void yuvarlakButon1_Click(object sender, EventArgs e)
+        {
+            frmsinavsorumlusu frm = new frmsinavsorumlusu();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

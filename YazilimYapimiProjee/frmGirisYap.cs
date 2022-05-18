@@ -37,6 +37,9 @@ namespace YazilimYapimiProjee
                         if (kontrol)
                         {
                             MessageBox.Show("Giriş Başarılı 😉");
+                            frmadmin frm = new frmadmin();
+                            frm.Show();
+                            this.Hide();
                         }
                     }
                     break;

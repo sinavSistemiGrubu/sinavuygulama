@@ -51,6 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.yuvarlakButon1 = new ShapedButton.YuvarlakButon();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSoru)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -296,12 +297,25 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Ünite Seçimi:";
             // 
+            // yuvarlakButon1
+            // 
+            this.yuvarlakButon1.BackColor = System.Drawing.Color.Maroon;
+            this.yuvarlakButon1.ForeColor = System.Drawing.Color.White;
+            this.yuvarlakButon1.Location = new System.Drawing.Point(0, 9);
+            this.yuvarlakButon1.Name = "yuvarlakButon1";
+            this.yuvarlakButon1.Size = new System.Drawing.Size(50, 29);
+            this.yuvarlakButon1.TabIndex = 17;
+            this.yuvarlakButon1.Text = "GERİ";
+            this.yuvarlakButon1.UseVisualStyleBackColor = false;
+            this.yuvarlakButon1.Click += new System.EventHandler(this.yuvarlakButon1_Click);
+            // 
             // frmsoruekle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Brown;
             this.ClientSize = new System.Drawing.Size(1309, 718);
+            this.Controls.Add(this.yuvarlakButon1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
@@ -351,5 +365,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private ShapedButton.YuvarlakButon yuvarlakButon1;
     }
 }
