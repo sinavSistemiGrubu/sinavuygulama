@@ -33,6 +33,7 @@ namespace YazilimYapimiProjee
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             conn.Open();
+            
             int soruId;
             int SinavId;
             int secilen = dataGridView1.SelectedCells[0].RowIndex;     
@@ -44,5 +45,7 @@ namespace YazilimYapimiProjee
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+
+       
     }
 }

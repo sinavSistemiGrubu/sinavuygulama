@@ -10,17 +10,25 @@ using System.Windows.Forms;
 
 namespace YazilimYapimiProjee
 {
-    public partial class frmOgrenciPanel : Form
+    public partial class frmsınav : Form
     {
-        public frmOgrenciPanel()
+        public frmsınav()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmsınav frm=new frmsınav();
+            panel1.Controls.Clear();
+            frmsinavbasla frm = new frmsinavbasla();
+            frm.id = Convert.ToInt32(cboxsinavid.Text);
+            frm.TopLevel = false;
+            panel1.Controls.Add(frm);
             frm.Show();
+            frm.Dock = DockStyle.Fill;
+            frm.BringToFront();
+            
+
 
         }
     }

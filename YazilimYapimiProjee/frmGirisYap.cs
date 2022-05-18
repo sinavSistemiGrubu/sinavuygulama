@@ -62,6 +62,9 @@ namespace YazilimYapimiProjee
                         if (kontrol)
                         {
                             MessageBox.Show("Giriş Başarılı 😃");
+                            frmOgrenciPanel frm = new frmOgrenciPanel();
+                            frm.Show();
+                            this.Hide();
                         }
                         break;
                     }
