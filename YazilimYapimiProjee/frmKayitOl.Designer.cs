@@ -235,6 +235,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmKayitOl";
             this.Text = "SINAV KAYIT";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

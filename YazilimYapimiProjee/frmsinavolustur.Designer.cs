@@ -118,6 +118,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmsinavolustur";
             this.Text = "frmsinavolustur";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmsinavolustur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

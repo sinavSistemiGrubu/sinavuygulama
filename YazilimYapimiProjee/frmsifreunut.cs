@@ -22,7 +22,7 @@ namespace YazilimYapimiProjee
 
 
         SqlConnection conn = frmGirisYap.connection;
-        SqlConnection conn1 = new SqlConnection("Data Source=LAPTOP-HSOIO2VO\\QLEXPRESS; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
+        SqlConnection conn1 = new SqlConnection("Data Source=LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
         public string tur;
         private void frmsifreunut_Load(object sender, EventArgs e)
         {
@@ -126,7 +126,7 @@ namespace YazilimYapimiProjee
 
                     {
                         kontrol = true;
-                        SqlCommand upd2 = new SqlCommand("Update sorumluu set ogrenciSifre=@a1 where ogrenciKullaniciAd=@a2 and ogrenciEmail=@a3", conn1);
+                        SqlCommand upd2 = new SqlCommand("Update sorumluu set sorumluSifre=@a1 where sorumluKullaniciAd=@a2 and sorumluEmail=@a3", conn1);
                         conn1.Open();
                         upd2.Parameters.AddWithValue("@a1", txtsifre.Text);
                         upd2.Parameters.AddWithValue("@a2", txtkullaniciadi.Text);

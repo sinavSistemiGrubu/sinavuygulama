@@ -39,7 +39,7 @@ namespace YazilimYapimiProjee
                             MessageBox.Show("Giriş Başarılı 😉");
                             frmadmin frm = new frmadmin();
                             frm.Show();
-                            this.Hide();
+                          
                         }
                     }
                     break;
@@ -68,7 +68,7 @@ namespace YazilimYapimiProjee
                             frmOgrenciPanel frm = new frmOgrenciPanel();
                             frm.ogrID = Convert.ToInt32(reader1["ogrenciId"].ToString());
                             frm.Show();
-                            this.Hide();
+                         
                         }
                         break;
                     }
@@ -98,7 +98,7 @@ namespace YazilimYapimiProjee
                             MessageBox.Show("Giriş Başarılı 😃");
                             frmsinavsorumlusu frmsorumlu = new frmsinavsorumlusu();
                             frmsorumlu.Show();
-                            this.Hide();
+                          
                         }
                         break;
                     }

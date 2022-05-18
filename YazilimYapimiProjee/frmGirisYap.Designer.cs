@@ -206,6 +206,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmGirisYap";
             this.Text = "SINAV GİRİŞ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

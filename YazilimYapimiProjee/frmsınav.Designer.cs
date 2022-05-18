@@ -111,6 +111,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmsınav";
             this.Text = "frmsınav";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

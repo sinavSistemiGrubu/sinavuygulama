@@ -68,6 +68,7 @@
             this.Controls.Add(this.button1);
             this.Name = "frmsinavsorumlusu";
             this.Text = "frmsinavsorumlusu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

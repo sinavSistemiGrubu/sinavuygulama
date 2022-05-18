@@ -82,7 +82,9 @@ namespace YazilimYapimiProjee
                 if (giris == DialogResult.OK)
                 {
                     frmOgrenciPanel frm = new frmOgrenciPanel();
+                    frm.ogrID = ogrId;
                     frm.Show();
+                    
                     this.Hide();
                 }
             }
@@ -106,10 +108,8 @@ namespace YazilimYapimiProjee
 
             }
             else
-            {
-                MessageBox.Show("yanlış");
-                CevapKontol(ogrId, id, SinavSoruId[sayac-1], false);
-              
+            { 
+                CevapKontol(ogrId, id, SinavSoruId[sayac-1], false); 
             }
             connection.Close();
         }
@@ -122,8 +122,6 @@ namespace YazilimYapimiProjee
             radioButtonSecenekB.Checked = false;
             radioButtonSecenekC.Checked = false;
             radioButtonSecenekD.Checked = false;
-
-
         }
 
         public void CevapKontol(int a ,int b ,int c,bool d)
@@ -136,11 +134,7 @@ namespace YazilimYapimiProjee
             cmd.Parameters.AddWithValue("p3", c);
             cmd.Parameters.AddWithValue("@p4", d);
             cmd.ExecuteNonQuery();
-          
-        
-          
-
-
+ 
         }
 
         private void timer1_Tick(object sender, EventArgs e)

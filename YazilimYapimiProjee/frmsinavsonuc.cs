@@ -63,9 +63,11 @@ namespace YazilimYapimiProjee
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            dataGridView2.DataSource = dt;
             conn.Close();
         }
+
+        
     }
 }
 
