@@ -21,7 +21,8 @@ namespace YazilimYapimiProjee
         public int a = 0;
         int[] SinavSoruId = new int[10];
         public int id;
-        
+        int saniye = 60;
+        int dakika = 10;
         int sayac = 0;
         string DogruSecenek = ""; string OgrenciSecenek = "";
         SqlConnection connection = new SqlConnection("Data Source=LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog=kullanicilarr; Integrated Security=TRUE");
@@ -29,6 +30,7 @@ namespace YazilimYapimiProjee
        
         private void frmsinavbasla_Load(object sender, EventArgs e)
         {
+            timer1.Start();
             connection.Open();
            SqlCommand cmd = new SqlCommand("SELECT * FROM tblSinav where SinavID=@p1",connection);
             cmd.Parameters.AddWithValue("@p1", id);
@@ -54,7 +56,13 @@ namespace YazilimYapimiProjee
                 {
 
                     lblsoru.Text = Convert.ToString(dr2[1]);
-                    pictureBox1.ImageLocation = dr2[2].ToString();
+                    if (dr2[2].ToString()!=null)
+                    {
+                     
+                       
+                        pictureBox2.ImageLocation = Convert.ToString(dr2[2]);
+                    }
+                   
                     radioButtonSecenekA.Text = Convert.ToString(dr2[5]);
                     radioButtonSecenekB.Text = Convert.ToString(dr2[6]);
                     radioButtonSecenekC.Text = Convert.ToString(dr2[7]);
@@ -66,7 +74,17 @@ namespace YazilimYapimiProjee
             }
             else
             {
-                MessageBox.Show("sinav bitmiştir");
+              
+                timer1.Stop();
+                DialogResult giris = MessageBox.Show("Sınav bitmiştir. Çıkmak  ister misiniz ?");
+
+
+                if (giris == DialogResult.OK)
+                {
+                    frmOgrenciPanel frm = new frmOgrenciPanel();
+                    frm.Show();
+                    this.Hide();
+                }
             }
            
 
@@ -82,8 +100,7 @@ namespace YazilimYapimiProjee
 
             if (OgrenciSecenek == DogruSecenek)
             {
-                MessageBox.Show("Dogru");
-              
+             
                 CevapKontol(ogrId, id, SinavSoruId[sayac-1], true);
 
 
@@ -124,6 +141,20 @@ namespace YazilimYapimiProjee
           
 
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Interval = 1000;
+            saniye = saniye - 1;
+            lblsn.Text = saniye.ToString();
+            lbldk.Text = (dakika - 1).ToString();
+            if (saniye == 0)
+            {
+                dakika = dakika - 1;
+                lbldk.Text = dakika.ToString();
+                saniye = 60;
+            }
         }
 
 

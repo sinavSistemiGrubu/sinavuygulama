@@ -51,5 +51,7 @@ namespace YazilimYapimiProjee
             frm1.ogrId = ogrID;
             frm1.Show();
         }
+
+     
     }
 }

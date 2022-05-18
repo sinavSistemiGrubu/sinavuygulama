@@ -77,6 +77,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Sınav Analiz";
             this.button2.UseVisualStyleBackColor = false;
+            
             // 
             // frmOgrenciPanel
             // 

@@ -28,19 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnsonraki = new System.Windows.Forms.Button();
             this.lblsoru = new System.Windows.Forms.Label();
             this.radioButtonSecenekA = new System.Windows.Forms.RadioButton();
             this.radioButtonSecenekB = new System.Windows.Forms.RadioButton();
             this.radioButtonSecenekC = new System.Windows.Forms.RadioButton();
             this.radioButtonSecenekD = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbldk = new System.Windows.Forms.Label();
+            this.lblsn = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnsonraki
@@ -109,15 +114,6 @@
             this.radioButtonSecenekD.Text = "-";
             this.radioButtonSecenekD.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(869, 108);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(255, 259);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButtonSecenekA);
@@ -134,36 +130,90 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblsoru);
-            this.groupBox2.Location = new System.Drawing.Point(72, 96);
+            this.groupBox2.Location = new System.Drawing.Point(57, 66);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(777, 271);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "SORU";
             // 
-            // openFileDialog1
+            // pictureBox2
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.pictureBox2.Location = new System.Drawing.Point(869, 112);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(471, 271);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbldk
+            // 
+            this.lbldk.AutoSize = true;
+            this.lbldk.Font = new System.Drawing.Font("Segoe UI Historic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbldk.Location = new System.Drawing.Point(1025, 66);
+            this.lbldk.Name = "lbldk";
+            this.lbldk.Size = new System.Drawing.Size(40, 31);
+            this.lbldk.TabIndex = 11;
+            this.lbldk.Text = "00";
+            // 
+            // lblsn
+            // 
+            this.lblsn.AutoSize = true;
+            this.lblsn.Font = new System.Drawing.Font("Segoe UI Historic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblsn.Location = new System.Drawing.Point(1094, 66);
+            this.lblsn.Name = "lblsn";
+            this.lblsn.Size = new System.Drawing.Size(40, 31);
+            this.lblsn.TabIndex = 12;
+            this.lblsn.Text = "00";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(1071, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(17, 28);
+            this.label1.TabIndex = 13;
+            this.label1.Text = ":";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(905, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 28);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Kalan Süre:";
             // 
             // frmsinavbasla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1330, 736);
+            this.ClientSize = new System.Drawing.Size(1402, 736);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.lblsn);
+            this.Controls.Add(this.lbldk);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnsonraki);
             this.Name = "frmsinavbasla";
             this.Text = "frmsinavbasla";
             this.Load += new System.EventHandler(this.frmsinavbasla_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -175,9 +225,13 @@
         private RadioButton radioButtonSecenekB;
         private RadioButton radioButtonSecenekC;
         private RadioButton radioButtonSecenekD;
-        private PictureBox pictureBox1;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private OpenFileDialog openFileDialog1;
+        private PictureBox pictureBox2;
+        private System.Windows.Forms.Timer timer1;
+        private Label lbldk;
+        private Label lblsn;
+        private Label label1;
+        private Label label2;
     }
 }

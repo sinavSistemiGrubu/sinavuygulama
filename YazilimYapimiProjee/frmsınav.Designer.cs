@@ -61,7 +61,11 @@
             "3",
             "4",
             "5",
-            "6"});
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cboxsinavid.Location = new System.Drawing.Point(497, 16);
             this.cboxsinavid.Name = "cboxsinavid";
             this.cboxsinavid.Size = new System.Drawing.Size(151, 28);

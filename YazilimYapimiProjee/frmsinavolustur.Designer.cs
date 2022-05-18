@@ -63,7 +63,12 @@
             "2",
             "3",
             "4",
-            "5"});
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cboxSınavId.Location = new System.Drawing.Point(483, 396);
             this.cboxSınavId.Name = "cboxSınavId";
             this.cboxSınavId.Size = new System.Drawing.Size(151, 28);

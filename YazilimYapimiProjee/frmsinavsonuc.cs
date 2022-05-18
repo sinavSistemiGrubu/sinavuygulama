@@ -49,5 +49,23 @@ namespace YazilimYapimiProjee
             }
             conn.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string komut = "select osd.SinavID,s.SoruText,osd.CevapDurum ,d.DersAdi from OgrenciSinavDurum osd inner join Sorular s on osd.SoruID=s.SoruId inner join Dersler d on s.DersId=d.DersId  where osd.OgrenciID=@p1 and osd.SinavID=@p2";//öğrencinin yanıtladığı cevaplar
+
+
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(komut, conn);
+            cmd.Parameters.AddWithValue("@p1",ogrId);
+            cmd.Parameters.AddWithValue("@p2", Convert.ToInt32(cbxsinavid.Text));
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            conn.Close();
+        }
     }
 }
+

@@ -36,7 +36,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // cbxsinavid
@@ -48,8 +51,12 @@
             "3",
             "4",
             "5",
-            "6"});
-            this.cbxsinavid.Location = new System.Drawing.Point(374, 38);
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbxsinavid.Location = new System.Drawing.Point(597, 33);
             this.cbxsinavid.Name = "cbxsinavid";
             this.cbxsinavid.Size = new System.Drawing.Size(151, 28);
             this.cbxsinavid.TabIndex = 0;
@@ -57,7 +64,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(131, 41);
+            this.label1.Location = new System.Drawing.Point(365, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 20);
             this.label1.TabIndex = 1;
@@ -65,7 +72,7 @@
             // 
             // btnsonuc
             // 
-            this.btnsonuc.Location = new System.Drawing.Point(390, 72);
+            this.btnsonuc.Location = new System.Drawing.Point(616, 67);
             this.btnsonuc.Name = "btnsonuc";
             this.btnsonuc.Size = new System.Drawing.Size(94, 29);
             this.btnsonuc.TabIndex = 2;
@@ -111,18 +118,40 @@
             this.groupBox1.Controls.Add(this.txtyanlis);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(147, 152);
+            this.groupBox1.Location = new System.Drawing.Point(343, 173);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(557, 125);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sonuçlar";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(324, 372);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(604, 263);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(505, 319);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(172, 29);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Sorular ve Cevapları";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmsinavsonuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 450);
+            this.ClientSize = new System.Drawing.Size(1359, 704);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnsonuc);
             this.Controls.Add(this.label1);
@@ -131,6 +160,7 @@
             this.Text = "frmsinavsonuc";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,5 +176,7 @@
         private Label label2;
         private Label label3;
         private GroupBox groupBox1;
+        private DataGridView dataGridView1;
+        private Button button1;
     }
 }
