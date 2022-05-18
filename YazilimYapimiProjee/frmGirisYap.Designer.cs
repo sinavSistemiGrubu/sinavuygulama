@@ -36,7 +36,6 @@
             this.radioButtonAdminGiris = new System.Windows.Forms.RadioButton();
             this.lnksifreunut = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -131,7 +130,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.txtKullaniciAdi);
             this.groupBox1.Controls.Add(this.txtSifre);
             this.groupBox1.Controls.Add(this.lnksifreunut);
@@ -144,13 +142,6 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sistem Giriş";
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(369, 132);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(8, 8);
-            this.progressBar1.TabIndex = 11;
             // 
             // txtKullaniciAdi
             // 
@@ -215,7 +206,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmGirisYap";
             this.Text = "SINAV GİRİŞ";
-          
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -235,7 +225,6 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private PictureBox pictureBox1;
-        private ProgressBar progressBar1;
         private TextBox txtKullaniciAdi;
         private TextBox txtSifre;
     }

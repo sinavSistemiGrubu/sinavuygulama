@@ -72,7 +72,6 @@ namespace YazilimYapimiProjee
             }
         }
 
-       
-
+        
     }
 }

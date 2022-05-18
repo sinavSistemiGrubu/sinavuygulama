@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tuglu\\OneDrive\\Bureau\\sinavuygulama\\YazilimYapimiProjee\\YazilimYapimiProjee.csproj": {}
+    "C:\\Users\\Barış\\OneDrive - Manisa Celal Bayar Üniversitesi\\Desktop\\New folder\\OtelRezervasyon\\sinavuygulama\\sinavuygulama\\YazilimYapimiProjee\\YazilimYapimiProjee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tuglu\\OneDrive\\Bureau\\sinavuygulama\\YazilimYapimiProjee\\YazilimYapimiProjee.csproj": {
+    "C:\\Users\\Barış\\OneDrive - Manisa Celal Bayar Üniversitesi\\Desktop\\New folder\\OtelRezervasyon\\sinavuygulama\\sinavuygulama\\YazilimYapimiProjee\\YazilimYapimiProjee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tuglu\\OneDrive\\Bureau\\sinavuygulama\\YazilimYapimiProjee\\YazilimYapimiProjee.csproj",
+        "projectUniqueName": "C:\\Users\\Barış\\OneDrive - Manisa Celal Bayar Üniversitesi\\Desktop\\New folder\\OtelRezervasyon\\sinavuygulama\\sinavuygulama\\YazilimYapimiProjee\\YazilimYapimiProjee.csproj",
         "projectName": "YazilimYapimiProjee",
-        "projectPath": "C:\\Users\\tuglu\\OneDrive\\Bureau\\sinavuygulama\\YazilimYapimiProjee\\YazilimYapimiProjee.csproj",
-        "packagesPath": "C:\\Users\\tuglu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tuglu\\OneDrive\\Bureau\\sinavuygulama\\YazilimYapimiProjee\\obj\\",
+        "projectPath": "C:\\Users\\Barış\\OneDrive - Manisa Celal Bayar Üniversitesi\\Desktop\\New folder\\OtelRezervasyon\\sinavuygulama\\sinavuygulama\\YazilimYapimiProjee\\YazilimYapimiProjee.csproj",
+        "packagesPath": "C:\\Users\\Barış\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Barış\\OneDrive - Manisa Celal Bayar Üniversitesi\\Desktop\\New folder\\OtelRezervasyon\\sinavuygulama\\sinavuygulama\\YazilimYapimiProjee\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tuglu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Barış\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

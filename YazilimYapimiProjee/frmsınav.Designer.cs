@@ -95,12 +95,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(214, 16);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(134, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 28);
+            this.label1.Size = new System.Drawing.Size(317, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Gİrmek İstediğiniz Sınavı Seçin:";
+            this.label1.Text = "Girmek İstediğiniz Sınavı Seçin:";
             // 
             // frmsınav
             // 

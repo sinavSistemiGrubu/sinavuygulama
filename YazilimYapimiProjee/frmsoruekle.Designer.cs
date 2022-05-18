@@ -58,13 +58,14 @@
             // 
             // btnEkle
             // 
+            this.btnEkle.BackColor = System.Drawing.Color.CadetBlue;
             this.btnEkle.Font = new System.Drawing.Font("Segoe UI Historic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEkle.Location = new System.Drawing.Point(553, 556);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(176, 41);
             this.btnEkle.TabIndex = 2;
             this.btnEkle.Text = "Soruyu Ekle";
-            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.UseVisualStyleBackColor = false;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // txtsoru
@@ -94,7 +95,7 @@
             // 
             // txtB
             // 
-            this.txtB.Location = new System.Drawing.Point(278, 54);
+            this.txtB.Location = new System.Drawing.Point(285, 54);
             this.txtB.Multiline = true;
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(156, 27);
@@ -102,7 +103,7 @@
             // 
             // txtD
             // 
-            this.txtD.Location = new System.Drawing.Point(278, 114);
+            this.txtD.Location = new System.Drawing.Point(285, 118);
             this.txtD.Multiline = true;
             this.txtD.Name = "txtD";
             this.txtD.Size = new System.Drawing.Size(156, 27);
@@ -120,6 +121,7 @@
             // btnA
             // 
             this.btnA.BackColor = System.Drawing.Color.Lime;
+            this.btnA.ForeColor = System.Drawing.Color.Black;
             this.btnA.Location = new System.Drawing.Point(9, 50);
             this.btnA.Name = "btnA";
             this.btnA.Size = new System.Drawing.Size(44, 42);
@@ -131,6 +133,7 @@
             // btnC
             // 
             this.btnC.BackColor = System.Drawing.Color.Lime;
+            this.btnC.ForeColor = System.Drawing.Color.Black;
             this.btnC.Location = new System.Drawing.Point(9, 110);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(44, 42);
@@ -142,6 +145,7 @@
             // btnB
             // 
             this.btnB.BackColor = System.Drawing.Color.Lime;
+            this.btnB.ForeColor = System.Drawing.Color.Black;
             this.btnB.Location = new System.Drawing.Point(219, 50);
             this.btnB.Name = "btnB";
             this.btnB.Size = new System.Drawing.Size(44, 42);
@@ -153,7 +157,8 @@
             // btnD
             // 
             this.btnD.BackColor = System.Drawing.Color.Chartreuse;
-            this.btnD.Location = new System.Drawing.Point(219, 99);
+            this.btnD.ForeColor = System.Drawing.Color.Black;
+            this.btnD.Location = new System.Drawing.Point(219, 114);
             this.btnD.Name = "btnD";
             this.btnD.Size = new System.Drawing.Size(44, 42);
             this.btnD.TabIndex = 8;
@@ -168,6 +173,7 @@
             // btnResimEkle
             // 
             this.btnResimEkle.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnResimEkle.ForeColor = System.Drawing.Color.Black;
             this.btnResimEkle.Location = new System.Drawing.Point(211, 57);
             this.btnResimEkle.Name = "btnResimEkle";
             this.btnResimEkle.Size = new System.Drawing.Size(52, 34);
@@ -187,13 +193,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.CadetBlue;
             this.button1.Font = new System.Drawing.Font("Segoe UI Historic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(346, 556);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 41);
             this.button1.TabIndex = 11;
             this.button1.Text = "Sayfayı Temizle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cmbxders
@@ -225,6 +232,7 @@
             this.groupBox1.Controls.Add(this.btnD);
             this.groupBox1.Controls.Add(this.btnB);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.Color.Snow;
             this.groupBox1.Location = new System.Drawing.Point(51, 344);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(447, 170);
@@ -236,6 +244,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Snow;
             this.label1.Location = new System.Drawing.Point(74, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(380, 28);
@@ -249,6 +258,7 @@
             this.groupBox2.Controls.Add(this.btnResimEkle);
             this.groupBox2.Controls.Add(this.txtYol);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.ForeColor = System.Drawing.Color.Snow;
             this.groupBox2.Location = new System.Drawing.Point(617, 63);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(680, 293);

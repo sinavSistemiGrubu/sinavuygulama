@@ -118,7 +118,7 @@
             this.txtSoyad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.txtSoyad.ForeColor = System.Drawing.Color.Snow;
-            this.txtSoyad.Location = new System.Drawing.Point(259, 95);
+            this.txtSoyad.Location = new System.Drawing.Point(259, 106);
             this.txtSoyad.Multiline = true;
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(254, 31);
